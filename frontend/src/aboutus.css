@@ -1,0 +1,30 @@
+.aboutus {
+    width: 100vw;
+    min-height: 100;
+    padding: 100px 50px 50px 50px;
+    background-color: #fcf9f9;
+    color: #c41200;
+  }
+
+  iframe{
+      margin: 20px;
+      margin-right: 0px;
+  }
+  #image {
+    display: flex;
+    border: 3px solid #990000;
+    border-radius: 80%;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+  }
+  div .row.row-content {
+    background-image: ();
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    height: 80vh;
+    justify-content: space-evenly;
+  }
+
+
