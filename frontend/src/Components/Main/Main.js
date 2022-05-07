@@ -16,7 +16,7 @@ import { Navbar, NavbarBrand, } from 'reactstrap';
 import Favorites from '../Favorites'
 import Invite from '../InviteComponent'
 import AboutUs from '../AboutUs'
-import ContactUs from '../ContactUs'
+
     
 
 const mapStateToProps = state => {
@@ -88,7 +88,6 @@ class Main extends Component {
                     <Route path='/login' component={() => <Login/>}/>
                     <Route path='/register'component={() => <Register/>}/>
                     <Route path='/aboutus'component={()=> <AboutUs/>}/>
-                    <Route path='/contactus'component={()=> <ContactUs/>}/>
                     <Route path='/home' component={this.props.token.token !== undefined ? () => <Home businesses={this.props.businesses}token= {this.props.token.token}/> : null}/>
                     <Route path='/favorites' component={ () => <Favorites favorites={this.props.favorites}businesses={this.props.businesses} token= {this.props.token.token} user ={this.props.user} />} />
                     <Route path='/restaurants' component={ () => <RenderRestaurant businesses={this.props.businesses} token= {this.props.token.token} />} />
